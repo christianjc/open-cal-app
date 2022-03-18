@@ -8,23 +8,22 @@ const btn_2 = 'Projector Off';
 
 function Button(props) {
   
-  return (
-      
-        <button className="home-btn">{props.name}</button>
-  )
+  return (  
+    <button className="home-btn">{props.name}</button>
+  );
 }
 
 function ProjectorView() {
-    return (
-        <div>
-      <Header name="projector"/>
-      <div className="App-content">
+  return (
+    <div className="Projector-content">
+      <h1>Projector</h1>
+      <div>
         <Button name={btn_1} />
         <Button name={btn_2} />
       </div>
-      <Footer/>
     </div>
-    )
+  );
 }
+
 
 export default ProjectorView;

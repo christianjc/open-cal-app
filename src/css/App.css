@@ -13,9 +13,133 @@
   color: white;
 }
 
-.App-content {
+.Home-content {
   background-color: #3b7ea1;
+  /* border: solid 2px purple; */
   min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.Home-content h1 {
+  /* background-color: #3b7ea1; */
+  border: solid 1px black;
+  margin: 0;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Home-content div {
+  /* background-color: #3b7ea1; */
+  /* border: solid 2px red; */
+  margin: 0;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Motor-content {
+  background-color: #3b7ea1;
+  /* border: solid 2px purple; */
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.motor-title {
+  /* background-color: #3b7ea1; */
+  border: solid 1px black;
+  margin: 0;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.motor-form {
+  /* background-color: #3b7ea1; */
+  /* border: solid 2px red; */
+  margin: 0;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input-div {
+  /* border: solid 2px red; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.motor-form label {
+  /* border: solid 2px black; */
+  color: white;
+  font-weight: bold;
+  width: 300px;
+  /* height: 40px; */
+  font-size: larger;
+  display: flex;
+  /* margin: 8px 0; */
+  margin: 0;
+  padding: 0;
+}
+
+.motor-form input {
+  /* border: solid 2px black; */
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  /* display: flex; */
+  width: 300px;
+  height: 40px;
+}
+
+.btn-div {
+  /* border: solid 2px black; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Projector-content {
+  background-color: #3b7ea1;
+  /* border: solid 2px purple; */
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.Projector-content h1 {
+  /* background-color: #3b7ea1; */
+  border: solid 1px black;
+  margin: 0;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Projector-content div {
+  /* background-color: #3b7ea1; */
+  /* border: solid 2px red; */
+  margin: 0;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,14 +147,15 @@
 }
 
 .home-btn {
+  border: solid 2px black;
   font-size: xx-large;
   color: white;
   width: 300px;
   height: 100px;
   background-color: #003262;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   padding: 10px 10px;
 }
 

@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import './css/index.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import HomeView from './routes/HomeView';
+import MotorView from "./routes/MotorView";
+import ProjectorView from './routes/ProjectorView';
+
+import './css/index.css';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -10,6 +15,7 @@ ReactDOM.render(
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App/>}>
+          <Route path='/' element={<HomeView/>}/>
           <Route path="motor" element={<MotorView/>} />
           <Route path="projector" element={<ProjectorView/>} />
         </Route>

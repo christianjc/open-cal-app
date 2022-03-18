@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import HomeView from "./routes/HomeView";
-import MotorView from "./routes/MotorView";
-import ProjectorView from "./routes/ProjectorView";
-import { AppContext }  from "./AppContext";
+
+import { Outlet } from "react-router-dom";
+import Header from "./componets/Header";
+import Footer from "./componets/Footer";
 import "./css/App.css"
 
 
 function App() {
   return (
-    
+    <div>
+      <Header/>
+      <Outlet/>
+      <Footer/>
+    </div>
   );
 }
 

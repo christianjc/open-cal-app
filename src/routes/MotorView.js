@@ -6,13 +6,15 @@ const btn_2 = 'Motor Off';
 const motorContex = createContext({speed:10, time:1});
 
 function Button(props) {
-  const {speed, time} = useContext(motorContex);
+  const {speed, time, setTimeOn} = useContext(motorContex);
   const motorChange = () => {
     if (props.name === 'Motor On') {
       turnMotorOn(speed, time);
     } else {
       turnMotorOff();
     }
+    setTimeOn(time+1);
+    console.log("motorChange ran" + time);
   }
 
   return (
@@ -43,7 +45,7 @@ function MotorView() {
           <input type="text" value={timeOn} onChange={(e) => setTimeOn(e.target.value)}/>
         </div>
   
-        <motorContex.Provider value={{speed:motorSpeed, time:timeOn}}>
+        <motorContex.Provider value={{speed:motorSpeed, time:timeOn, setTimeOn}}>
           <div className="btn-div">
           <Button name={btn_1} />
           </div>
